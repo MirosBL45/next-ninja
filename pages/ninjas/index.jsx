@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Meta from '@/components/Meta';
 import Link from 'next/link';
 import styles from '@/styles/Ninjas.module.css';
 
@@ -16,13 +16,11 @@ export async function getStaticProps() {
 function Ninjas({ ninjas }) {
   return (
     <>
-      <Head>
-        <title>Next MJ | Listing</title>
-        <meta name="description" content="Next MJ | Listing" />
-        <meta name="keywords" content="Next MJ | Listing" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logoMJ.png" />
-      </Head>
+      <Meta
+        title="Next MJ | Listing"
+        keywords="Next MJ | Listing"
+        description="Next MJ | Listing"
+      />
       <div>
         <h1>All Ninjas</h1>
         {ninjas.map((ninja) => (

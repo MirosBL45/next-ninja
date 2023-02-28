@@ -1,17 +1,10 @@
-import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Next MJ | Home</title>
-        <meta name="description" content="Next MJ | Home" />
-        <meta name="keywords" content="Next MJ | Home" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logoMJ.png" />
-      </Head>
+      {/* here does not have to put meta tag, because meta is in Layout always, which here is with defaultProps */}
       <div>
         <h1 className={styles.title}>Homepage</h1>
         <p className={styles.text}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam itaque et sequi ipsa? Culpa nemo earum quas nobis, esse nihil laborum necessitatibus quidem deserunt placeat tenetur illo obcaecati tempore dignissimos voluptates illum velit suscipit. Quam asperiores enim sapiente perspiciatis quibusdam deserunt nam eligendi nulla explicabo pariatur. Commodi officiis dolorum sequi dolor! Illum consequuntur architecto vitae. Optio, non praesentium, reprehenderit libero laudantium vel eum, sit iste explicabo fugit dignissimos repellendus consequuntur!</p>

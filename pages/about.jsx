@@ -1,15 +1,13 @@
-import Head from 'next/head';
+import Meta from '@/components/Meta';
 
 function About() {
   return (
     <>
-      <Head>
-        <title>Next MJ | About</title>
-        <meta name="description" content="Next MJ | About" />
-        <meta name="keywords" content="Next MJ | About" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logoMJ.png" />
-      </Head>
+      <Meta
+        title="Next MJ | About"
+        keywords="Next MJ | About"
+        description="Next MJ | About"
+      />
       <div>
         <h1>About</h1>
         <p>

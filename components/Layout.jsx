@@ -1,13 +1,17 @@
-import Footer from './Footer';
 import Navbar from './Navbar';
+import Meta from './Meta';
+import Footer from './Footer';
 
 function Layout({ children }) {
   return (
-    <div className="content">
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <Meta />
+      <div className="content">
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </>
   );
 }
 

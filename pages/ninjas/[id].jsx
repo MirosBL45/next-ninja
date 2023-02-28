@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Meta from '@/components/Meta';
 
 //first: it tells how many HTML pages need to be made based on our data from server
 export async function getStaticPaths() {
@@ -33,13 +33,11 @@ export async function getStaticProps(context) {
 function Details({ ninja }) {
   return (
     <>
-      <Head>
-        <title>Next MJ | Details</title>
-        <meta name="description" content="Next MJ | Details" />
-        <meta name="keywords" content="Next MJ | Details" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logoMJ.png" />
-      </Head>
+      <Meta
+        title={`Next MJ | ${ninja.name} details`}
+        keywords={`Next MJ | ${ninja.name} details`}
+        description={`Next MJ | ${ninja.name} details`}
+      />
       <div>
         <h1>{ninja.name}</h1>
         <p>{ninja.email}</p>

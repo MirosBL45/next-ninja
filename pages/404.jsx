@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import Meta from '@/components/Meta';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
@@ -20,13 +20,11 @@ function NotFound() {
 
   return (
     <>
-      <Head>
-        <title>Next MJ | 404</title>
-        <meta name="description" content="Next MJ | 404" />
-        <meta name="keywords" content="Next MJ | 404" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logoMJ.png" />
-      </Head>
+      <Meta
+        title="Next MJ | 404"
+        keywords="Next MJ | 404"
+        description="Next MJ | 404"
+      />
       <div className="not-found">
         <h1>Oooops..</h1>
         <h2>That page cannot be found</h2>
